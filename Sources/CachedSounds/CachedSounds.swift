@@ -9,7 +9,7 @@ import AVFoundation
 public class CachedSounds {
     private static var audioPlayers:[URL : AVAudioPlayer?] = [:]
     
-    public static func playSounds(soundfile: String) {
+    public static func playSound(soundfile: String) {
         DispatchQueue.main.async {
             do {
                 try AVAudioSession.sharedInstance().setCategory(.playback)
